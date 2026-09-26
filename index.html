@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevGuard AI — Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ─── Header ────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-badge">IBM Bob 2.0</div>
+      <h1 class="site-title">DevGuard AI</h1>
+      <p class="site-subtitle">Autonomous Repository Rescue with IBM Bob 2.0</p>
+      <span class="status-pill pass">✓ PASS</span>
+    </div>
+  </header>
+
+  <!-- ─── Hero score cards ──────────────────────────────────── -->
+  <section class="section" id="scores">
+    <div class="container">
+      <h2 class="section-title">Repository Health Score</h2>
+      <div class="cards-row">
+        <div class="card card--before">
+          <div class="card-label">Before Bob</div>
+          <div class="card-score" id="score-before">0</div>
+          <div class="card-denom">/ 100</div>
+          <div class="card-tag critical">Critical</div>
+        </div>
+
+        <div class="card card--delta">
+          <div class="card-label">Improvement</div>
+          <div class="card-score positive" id="score-delta">0</div>
+          <div class="card-denom">points</div>
+          <div class="card-tag improvement">+65 pts</div>
+        </div>
+
+        <div class="card card--after">
+          <div class="card-label">After Bob</div>
+          <div class="card-score" id="score-after">0</div>
+          <div class="card-denom">/ 100</div>
+          <div class="card-tag excellent">Excellent</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Score bar visualisation ──────────────────────────── -->
+  <section class="section section--dark" id="breakdown">
+    <div class="container">
+      <h2 class="section-title">Score Breakdown by Category</h2>
+      <div class="breakdown-grid" id="breakdown-grid">
+        <!-- injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Test improvement ─────────────────────────────────── -->
+  <section class="section" id="tests">
+    <div class="container">
+      <h2 class="section-title">Test Suite Improvement</h2>
+      <div class="cards-row cards-row--2">
+        <div class="card card--before">
+          <div class="card-label">Tests Before</div>
+          <div class="card-score" id="tests-before">0</div>
+          <div class="card-denom">passing</div>
+          <div class="card-detail">3 of 6 endpoints covered</div>
+        </div>
+        <div class="card card--after">
+          <div class="card-label">Tests After</div>
+          <div class="card-score" id="tests-after">0</div>
+          <div class="card-denom">passing</div>
+          <div class="card-detail">6 of 6 endpoints covered</div>
+        </div>
+      </div>
+
+      <div class="test-grid" id="test-grid">
+        <!-- injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Defects addressed ────────────────────────────────── -->
+  <section class="section section--dark" id="defects">
+    <div class="container">
+      <h2 class="section-title">Defects Addressed — D1 through D8</h2>
+      <div class="defect-grid" id="defect-grid">
+        <!-- injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Workflow stages ──────────────────────────────────── -->
+  <section class="section" id="workflow">
+    <div class="container">
+      <h2 class="section-title">IBM Bob 2.0 Workflow Stages</h2>
+      <div class="workflow-track" id="workflow-track">
+        <!-- injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Business value ───────────────────────────────────── -->
+  <section class="section section--dark" id="value">
+    <div class="container">
+      <h2 class="section-title">Business Value</h2>
+      <div class="value-grid" id="value-grid">
+        <!-- injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Verification summary ─────────────────────────────── -->
+  <section class="section" id="verification">
+    <div class="container">
+      <h2 class="section-title">Final Verification Summary</h2>
+      <div class="verify-block">
+        <table class="verify-table" id="verify-table">
+          <!-- injected by script.js -->
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <span>DevGuard AI &mdash; Autonomous Repository Rescue &mdash; IBM Bob 2.0</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
